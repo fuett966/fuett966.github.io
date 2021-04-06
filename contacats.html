@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style/cr.css" href="style/normalize.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты</title>
+    <style>
+        body {
+            background: #000000;
+            background: url(pic/back.jpg);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="privetstvie">
+            <p class="menu">Меню</p>
+            <a class="text"href="index.html">Главная</a>
+            &emsp; <a class="text"href="catalog.html">Каталог</a>
+            &emsp; <a class="text"href="contacats.html">Контакты</a>
+        </div>
+    </header>
+    <div class="privetstvie">
+        <h1>Напишите нам!</h1>
+        <form>
+            <div class="vvod">
+                <p><b>Имя:</b></p>
+                <input type="text" name="firstname" size="20"><br><br>
+                <p><b>Фамилия:</b></p>
+                <input type="text" name="lastname" size="20"><br><br>
+                <p><b>@Email:</b></p>
+                <input type="email" name="Email" size="20"><br><br>
+                <p><b>Номер телефона:</b></p>
+                <input type="tel" name="telefon" size="11"><br><br>
+                <p><b>Пол:</b></p>
+                <input type="radio" name="sex" value="male">Мужчина&emsp;
+                <input type="radio" name="sex" value="female">Женщина&emsp;
+                <input type="radio" name="sex" value="another">Другой<br><br>
+            </div>
+            <p><b>Тема обращения</b></p>
+            <select name="theme" required="required">
+                <option value="">Выберите вариант</option>
+                <option>Вопрос по работе сервиса</option>
+                <option>Помощь в оформлении заказа</option>
+                <option>Сотрудничество</option>
+                <option>Пожелания / предложения</option>
+            </select>
+            <p><b>Суть вопроса/предложения</b></p>
+            <textarea name="message" cols="50" rows="10"></textarea>
+            <p><b>Если нужно, прикрепите скриншот</b></p>
+            <input class="file" type="file" /><br><br>
+            <button type="submit">Отправить</button>&emsp;
+            <button type="reset">Очистить</button>
+        </form>
+        <hr size=1px>
+    </div>
+    <div class="adres">
+        <p><b>Горячая линия:</b>
+        <h1> +7 (495) 543-88-88</h1> *Звонок бесплатный*</p>
+    </div>
+    <footer>
+        <hr size=1px>
+        <div class="foter">
+            <div class="copyrrater">
+                &#169; Все права защищены
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
