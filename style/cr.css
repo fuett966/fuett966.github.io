@@ -32,11 +32,13 @@ h1{
 }
 
 .container{
-    font-size: 25px;
+    font-size: 18px;
     font-style: italic;
-    color: rgb(239, 255, 15);
+    color: rgb(141, 214, 5);
     padding: 0 1px;
     margin: 0 auto;
+    text-align: left;  
+    box-shadow: 0 1px 7px rgb(112, 172, 2);
 }
 
 .container a:visited{
@@ -46,6 +48,9 @@ b{
     color: rgb(50, 250, 0);
 }
 
+.colottext{
+    color: rgb(50, 250, 0);
+}
 .icon{
     text-align: right;  
 }
@@ -121,6 +126,8 @@ b{
 
 .price {
     color: rgb(152, 221, 25);
+    font-size: 18px;
+    font-style: italic;
 }
 
 .har {
@@ -129,7 +136,8 @@ b{
     font-weight: 800;
     line-height: 5px;
     font-style: italic;
-    text-align: right;
+    text-align: left;
+    line-height: 1.5;
 }
 
 input {
