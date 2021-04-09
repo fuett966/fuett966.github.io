@@ -13,7 +13,39 @@ border-radius: 100px; /* Радиус скругления */
 border: 5px solid rgb(153, 216, 7); /* Параметры рамки */
 box-shadow: 0 0 7px #666; /* Параметры тени */
 }
+.box{
+    margin: auto;
+    box-shadow: 0 0 7px rgb(255, 0, 0);
+}
+.boxopisanie{
+    margin: auto;
+    box-shadow: 0 0 7px rgb(255, 0, 0);
+}
+.abord{
+    float:left; /* Выравнивание по левому краю */
+    margin: 7px 7px 7px 0;
+    margin: auto;
+}
 
+.layer1 {
+    
+    padding: 5px; /* Поля вокруг текста */
+    float: right; /* Обтекание по правому краю */
+   }
+   .layer2 {
+    font-size: 20px;;
+    padding: 5px; /* Поля вокруг текста */
+    width: 400px; /* Ширина слоя */
+    float: right; /* Обтекание по правому краю */
+   }
+   .clear {
+    clear: right; /* Отмена обтекания */
+   }
+.abord11{
+    float:right; /* Выравнивание по левому краю */
+    margin: 7px 7px 7px 0;
+    margin: auto;
+}
 h1{
     color: rgb(102, 255, 0);
     font-size: 30px;
@@ -32,13 +64,15 @@ h1{
 }
 
 .container{
+    margin-left: 110px;
+    vertical-align: top;
     font-size: 18px;
     font-style: italic;
     color: rgb(141, 214, 5);
     padding: 0 1px;
-    margin: 0 auto;
-    text-align: left;  
-    box-shadow: 0 1px 7px rgb(112, 172, 2);
+    margin: 10px auto;
+    text-align: right;  
+    box-shadow: 0px 1px 7px rgb(112, 172, 2);
 }
 
 .container a:visited{
@@ -50,6 +84,10 @@ b{
 
 .colottext{
     color: rgb(50, 250, 0);
+    
+}
+.aligntext{
+    text-align: left;
 }
 .icon{
     text-align: right;  
@@ -58,7 +96,8 @@ b{
 .opisanie{
     text-align: right;
     padding: 20px;
-    box-shadow: 0 1px 7px rgb(112, 172, 2);
+    
+    
 }
 
 .tovari{
@@ -74,9 +113,10 @@ b{
 }
 
 .privetstvie {
-    box-shadow: 0 1px 7px rgb(112, 172, 2);
+    box-shadow: 0 1px 10px rgb(112, 172, 2);
     color:rgb(0, 0, 0);
     text-align: center;
+    vertical-align: top;
 }
 
 .copyrrater{
@@ -119,7 +159,7 @@ b{
 .pdopis {
     text-align: left;
     color: #00743e;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 400;
     line-height: 24px;
 }
@@ -130,6 +170,12 @@ b{
     font-style: italic;
 }
 
+.privetstvie228{
+    box-shadow: 0 1px 7px rgb(112, 172, 2);
+    color:rgb(0, 0, 0);
+    text-align: center;
+    font-size: 18px;
+}
 .har {
     color: rgb(38, 211, 22);
     font-size: 18px;
@@ -182,6 +228,11 @@ textarea {
   }
 
   .text{
+    font-size: 40px;
+    font-style: Verdana;
+  }
+  .textmenu{
     font-size: 20px;
     font-style: Verdana;
+    text-decoration: none;
   }
