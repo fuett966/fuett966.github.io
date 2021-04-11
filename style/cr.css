@@ -28,7 +28,8 @@ box-shadow: 0 0 7px #666; /* Параметры тени */
 }
 
 .layer1 {
-    
+    width: 1000px;
+    height: 500px;
     padding: 5px; /* Поля вокруг текста */
     float: right; /* Обтекание по правому краю */
    }
