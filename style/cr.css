@@ -1,4 +1,9 @@
+li{
+    list-style-type: none;
+}
+
 a{
+    width: 360px;
     color: rgb(102, 255, 0);
 }
 body {
