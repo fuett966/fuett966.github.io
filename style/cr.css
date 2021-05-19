@@ -74,11 +74,11 @@ h1{
     vertical-align: top;
     font-size: 18px;
     font-style: italic;
-    color: rgb(141, 214, 5);
     padding: 0 1px;
+    padding-left:5%;
+    padding-right:5%;
     margin: 10px auto;
     text-align: right;  
-    box-shadow: 0px 1px 7px rgb(112, 172, 2);
 }
 
 .container a:visited{
@@ -107,10 +107,11 @@ b{
 }
 
 .tovari{
-    box-shadow: 0 1px 7px rgb(112, 172, 2);
     color: rgb(0, 0, 0);
     text-align: center;
     padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .nazvanie {
     color: rgb(0, 0, 0);
@@ -128,6 +129,7 @@ b{
 .copyrrater{
     color: rgb(255, 255, 255);
     text-align: center;
+    padding-top: 5%;
 }
 
 .tovars {
