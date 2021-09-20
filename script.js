@@ -1,17 +1,20 @@
-$( "#clickme" ).click(function() {
-    $( ".engineer" ).toggleClass( "show");
-    $( ".container" ).toggleClass( "active");
-}
-)
+
 let input = document.querySelector('.input');
 let power = "";
 
-function insert(num) {
-    if (input.textContent == 0) {
+function insert(num) 
+{
+    if (input.textContent == 0) 
+    {
+        input.textContent = 0;
         input.textContent = "";
         input.textContent += num;
-    } else
-        input.textContent += num;
+    } 
+    else
+    {
+            input.textContent += num;
+        
+    }
 }
 
 function clean() {
@@ -127,3 +130,8 @@ function f(name) {
 }
 
 
+$( "#clickme" ).click(function() {
+    $( ".engineer" ).toggleClass( "show");
+    $( ".container" ).toggleClass( "active");
+}
+)
