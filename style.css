@@ -1,0 +1,83 @@
+body {
+    user-select: none;
+}
+.containerver1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    position: absolute;
+    background-color:#212121;
+    height: 450px;
+    width: 400px;
+    padding: 15px;
+    border: 0px;
+    border-radius: 10px;
+
+}
+.item {
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    cursor: pointer;
+}
+.button{
+    background-color:#301111;
+    color: #ff7c01;
+    height:50px;
+    width:50px;
+    border: 0px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+.input {
+    min-height: 60px;
+    height: auto;
+    padding: 5px 20px;
+    grid-column: 1/-1;
+    font-size: 40px;
+    justify-content: flex-end;
+}
+.upper {
+    font-size: 20px;
+    margin-left: 3px;
+    margin-top: -20px;
+}
+
+.clean, .back, .percent, .divide, .mul, .sub, .add {
+    color: #ff7c01;
+}
+
+.equal { 
+    background-color: #ff7c01;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.active {
+    position: relative; 
+    left: 0;
+}
+
+.engineer{
+    visibility:hidden;
+    position: fixed;
+    width:400px;
+    height: 480px;
+    left:40px;
+    transition: .3s;
+    background-color:#212121;
+    z-index:-1;
+}
+.show{
+    visibility:visible;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    left: 420px;
+    height: 480px;
+    border: 0px;
+    border-radius: 10px;
+}
+

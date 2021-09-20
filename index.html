@@ -1,71 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style/cr.css" href="style/normalize.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kaustic Shop</title>
-    <style>
-        body {
-            background: url(pic/back.jpg);
-            -moz-background-size: 100%;
-            -webkit-background-size: 100%;
-            -o-background-size: 100%;
-            background-size: 100%;
-        }
-    </style>
+   <title>Калькулятор</title>
+   <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    
-    <header>
-        
-        <div id="header"><img style="position:absolute;left:5%;top:1%;" src="pic/logo.png" width="10%"></div>
-
-        <div class="privetstvie">
-            <p class="menu">Kaustic Shop</p>
-            <a class="textmenu" href="index.html">Главная</a>
-            &emsp;<a class="textmenu" href="catalog.html"> Каталог </a>
-            &emsp;<a class="textmenu" href="contacats.html"> Контакты </a>
-        </div>
-
-        <hr size=1px>
-    </header>
-    <div class="privetstvie228">
-        <b class="text">Добро пожаловать в онлайн магазин Александра Нокса!</b>
-    </div>
-    <hr size=1px>
-    <div class="nazvanie">
-        <img src="pic/kaustik_0.jpg" width="20%" class="round">
-    </div>
-    <footer>
-
-        <hr size=1px>
-        <div class="foter">
-<div class="icon">
-
-                    <a href="https://vk.com/kaustik_one_love" target="_blank">
-                        <img src="pic/vk.png" width="50px"></a>
-                    <a href="https://www.instagram.com/shizded/" target="_blank">
-                        <img src="pic/inst.png" width="50px"></a>
-
-                </div>
-            <div class="copyrrater">
-                &#169; Все права защищены
-                
-            </div>
-        </div>
-
-    </footer>
+   <div id="clickme" class="item button">
+      Инженерный Калькулятор 
+   </div>
+      <div class="containerver1"><div class="item input">0</div>
+         <div class="item clean" onclick="clean()">C</div>
+         <div class="item back" onclick="back()">&lArr;</div>
+         <div class="item percent" onclick="percent()">%</div>
+         <div class="item divide" onclick="insert('/')">&divide;</div>
 
 
+         <div class="item" onclick="insert('7')">7</div>
+         <div class="item" onclick="insert('8')">8</div>
+         <div class="item" onclick="insert('9')">9</div>
+         <div class="item mul" onclick="insert('*')">&times;</div>
+
+
+         <div class="item" onclick="insert('4')">4</div>
+         <div class="item" onclick="insert('5')">5</div>
+         <div class="item" onclick="insert('6')">6</div>
+         <div class="item sub" onclick="insert('-')">-</div>
+
+
+         <div class="item" onclick="insert('1')">1</div>
+         <div class="item" onclick="insert('2')">2</div>
+         <div class="item" onclick="insert('3')">3</div>
+         <div class="item add" onclick="insert('+')">+</div>
+
+
+         <div class="item" onclick="constant('e')">e</div>
+         <div class="item zero" onclick="insert('0')">0</div>
+         <div class="item" onclick="insert('.')">,</div>
+         <div class="item equal" onclick="equal()">=</div>
+      </div>
+      <div class="engineer">
+         <div class="item type">deg</div>
+         <div class="item" onclick="f('sin')">sin</div>
+         <div class="item" onclick="f('cos')">cos</div>
+         <div class="item" onclick="f('tan')">tan</div>
+         <div class="item" onclick="f('ctg')">ctg</div>
+
+         <div class="item" onclick="operation('^')">x<span class="upper">y</span></div>
+         <div class="item" onclick="log('lg')">lg</div>
+         <div class="item" onclick="log('ln')">ln</div>
+         <div class="item" onclick="insert('(')">(</div>
+         <div class="item" onclick="insert(')')">)</div>
+
+         <div class="item " onclick="operation('sqr')">x<span class="upper">2</span></div>
+         <div class="item " onclick="operation('^-1')">x<span class="upper">-1</span></div>
+         <div class="item " onclick="operation('sqrt')">&radic;x</div>
+         <div class="item" onclick="fact()">x!</div>
+         <div class="item  " onclick="constant('pi')">&prod;</div>
+      </div>
+
+
+   <script src="./script.js"></script>
+   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+   <script>
+      $("#clickme").click(function () {
+         $(".engineer").toggleClass("show");
+         $(".container").toggleClass("active");
+      }
+      )
+
+   </script>
 </body>
 
 </html>
