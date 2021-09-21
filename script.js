@@ -12,8 +12,7 @@ function insert(num)
     } 
     else
     {
-            input.textContent += num;
-        
+        input.textContent += num;
     }
 }
 
@@ -34,19 +33,19 @@ function equal() {
     let exp = input.textContent;
     if (input.textContent.includes('^')) {
         let tmp = input.textContent.split('^')
-        let num = eval(power);
+        let num = parseFloat(power);
         let pow = +tmp[1]
         input.textContent = Math.pow(num, pow);
         power = "";
         return;
     }
     if (exp) {
-        input.textContent = eval(exp);
+        input.textContent = parseFloat(exp);
     }
 }
 
 function percent() {
-    input.textContent = eval(input.textContent) / 100;
+    input.textContent = parseFloat(input.textContent) / 100;
 }
 
 function constant(name) {
@@ -61,11 +60,11 @@ function constant(name) {
 
 function operation(name) {
     if (name == "sqrt")
-        input.textContent = Math.sqrt(eval(input.textContent));
+        input.textContent = Math.sqrt(parseFloat(input.textContent));
     if (name == "sqr")
-        input.textContent = Math.pow(eval(input.textContent), 2);
+        input.textContent = Math.pow(parseFloat(input.textContent), 2);
     if (name == "^-1")
-        input.textContent = Math.pow(eval(input.textContent), -1);
+        input.textContent = Math.pow(parseFloat(input.textContent), -1);
     if (name == "^") {
         power = input.textContent;
         input.textContent += "^";
@@ -76,15 +75,15 @@ function factorial(n) {
     return (n != 1) ? n * factorial(n - 1) : 1;
 }
 function fact() {
-    input.textContent = factorial(+eval(input.textContent));
+    input.textContent = factorial(+parseFloat(input.textContent));
 }
 
 function log(name) {
     if (name == 'lg') {
-        input.textContent = Math.log10(eval(input.textContent)).toFixed(8);
+        input.textContent = Math.log10(parseFloat(input.textContent)).toFixed(8);
     }
     if (name == 'ln') {
-        input.textContent = Math.log(eval(input.textContent)).toFixed(8);
+        input.textContent = Math.log(parseFloat(input.textContent)).toFixed(8);
     }
 }
 
@@ -101,30 +100,30 @@ document.querySelector('.type').addEventListener('click', function() {
 function f(name) {
     if (name == 'sin') {
         if(document.querySelector('.type').textContent == "deg") {
-            input.textContent = parseFloat(Math.sin(eval(input.textContent) / 180 * Math.PI).toFixed(8).toString());
+            input.textContent = parseFloat(Math.sin(parseFloat(input.textContent) / 180 * Math.PI).toFixed(8).toString());
         } else {
-            input.textContent = parseFloat(Math.sin(eval(input.textContent)).toFixed(8).toString());
+            input.textContent = parseFloat(Math.sin(parseFloat(input.textContent)).toFixed(8).toString());
         }        
     }
     if (name == 'cos') {
         if(document.querySelector('.type').textContent == "deg") {
-            input.textContent = parseFloat(Math.cos(eval(input.textContent) / 180 * Math.PI).toFixed(8).toString());
+            input.textContent = parseFloat(Math.cos(parseFloat(input.textContent) / 180 * Math.PI).toFixed(8).toString());
         } else {
-            input.textContent = parseFloat(Math.cos(eval(input.textContent)).toFixed(8).toString());
+            input.textContent = parseFloat(Math.cos(parseFloat(input.textContent)).toFixed(8).toString());
         } 
     }
     if (name == 'tan') {
         if(document.querySelector('.type').textContent == "deg") {
-            input.textContent = parseFloat(Math.tan(eval(input.textContent) / 180 * Math.PI).toFixed(8).toString());
+            input.textContent = parseFloat(Math.tan(parseFloat(input.textContent) / 180 * Math.PI).toFixed(8).toString());
         } else {
-            input.textContent = parseFloat(Math.tan(eval(input.textContent)).toFixed(8).toString());
+            input.textContent = parseFloat(Math.tan(parseFloat(input.textContent)).toFixed(8).toString());
         }  
     }
     if (name == 'ctg') {
         if(document.querySelector('.type').textContent == "deg") {
-            input.textContent = parseFloat(1/Math.tan(eval(input.textContent) / 180 * Math.PI).toFixed(8).toString());
+            input.textContent = parseFloat(1/Math.tan(parseFloat(input.textContent) / 180 * Math.PI).toFixed(8).toString());
         } else {
-            input.textContent = parseFloat(1/Math.tan(eval(input.textContent)).toFixed(8).toString());
+            input.textContent = parseFloat(1/Math.tan(parseFloat(input.textContent)).toFixed(8).toString());
         } 
     }
 }
