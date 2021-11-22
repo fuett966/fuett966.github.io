@@ -112,16 +112,3 @@ function Color(id,name,r,g,b,code)
     this.b = b;
     this.code = code;
 }
-
-maxIdSize = 5;
-datasize = [{id: 1, name: "S"},
-    {id: 2, name: "M"},
-    {id: 3, name: "L"},
-    {id: 4, name: "XL"},
-    {id: 5, name: "XXL"}];
-
-function Size(id,name)
-{
-    this.id = id;
-    this.name = name;
-}
