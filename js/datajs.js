@@ -1,12 +1,12 @@
 maxIdSection = 6;
 datasection =
         [
-            {id: 1, name: "Канцелярия", sort: 1, status: 1},
-            {id: 2, name: "Продукты питания", sort: 1, status: 1},
-            {id: 3, name: "Мода", sort: 1, status: 1},
-            {id: 4, name: "Бижутерия", sort: 1, status: 1},
-            {id: 5, name: "Мебель и интерьер", sort: 1, status: 1},
-            {id: 6, name: "Косметика", sort: 1, status: 1}
+            {id: 1, name: "Бебра", sort: 1, status: 1},
+            {id: 2, name: "Продукты питания моделей", sort: 1, status: 1},
+            {id: 3, name: "Мода из коМОДА", sort: 1, status: 1},
+            {id: 4, name: "Бижутерия из зубов кабана", sort: 1, status: 1},
+            {id: 5, name: "Мебель и интерьер для чайников", sort: 1, status: 1},
+            {id: 6, name: "Косметика из навоза", sort: 1, status: 1}
         ];
 
 function Section(id, name, sort, status)
@@ -17,8 +17,8 @@ function Section(id, name, sort, status)
     this.status = status ? 1 : 0;
 }
 maxIdCategory = 30;
-datacategory = [{id: 1, name: "Бумага для печати", section: 1, sort: 1, status: 1},
-    {id: 2, name: "Письменные принадлежности", section: 1, sort: 1, status: 1},
+datacategory = [{id: 1, name: "Бебра для нюхания", section: 1, sort: 1, status: 1},
+    {id: 2, name: "Ручка и чернила", section: 1, sort: 1, status: 1},
     {id: 3, name: "Степлеры, и пр.", section: 1, sort: 1, status: 1},
     {id: 4, name: "Чернила", section: 1, sort: 1, status: 1},
     {id: 5, name: "Кондитерские изделия", section: 2, sort: 1, status: 1},
@@ -57,36 +57,36 @@ function Category(id,name,section,sort,status)
     this.status = status ? 1 : 0;
 }
 maxIdBrends = 30;
-databrends = [{id: 1, name: "Бренд №1 Секция №1", section: 1, sort: 1, status: 1},
-    {id: 2, name: "Бренд №2 Секция №1", section: 1, sort: 1, status: 1},
-    {id: 3, name: "Бренд №3 Секция №1", section: 1, sort: 1, status: 1},
-    {id: 4, name: "Бренд №4 Секция №1", section: 1, sort: 1, status: 1},
-    {id: 5, name: "Бренд №5 Секция №2", section: 2, sort: 1, status: 1},
-    {id: 6, name: "Бренд №6 Секция №2", section: 2, sort: 1, status: 1},
-    {id: 7, name: "Бренд №7 Секция №2", section: 2, sort: 1, status: 1},
-    {id: 8, name: "Бренд №8 Секция №2", section: 2, sort: 1, status: 1},
-    {id: 9, name: "Бренд №9 Секция №2", section: 2, sort: 1, status: 1},
-    {id: 10, name: "Бренд №10 Секция №2", section: 2, sort: 1, status: 1},
-    {id: 11, name: "Бренд №11 Секция №3", section: 3, sort: 1, status: 1},
-    {id: 12, name: "Бренд №12 Секция №3", section: 3, sort: 1, status: 1},
-    {id: 13, name: "Бренд №13 Секция №3", section: 3, sort: 1, status: 1},
-    {id: 14, name: "Бренд №14 Секция №3", section: 3, sort: 1, status: 1},
-    {id: 15, name: "Бренд №15 Секция №3", section: 3, sort: 1, status: 1},
-    {id: 16, name: "Бренд №16 Секция №4", section: 4, sort: 1, status: 1},
-    {id: 17, name: "Бренд №17 Секция №4", section: 4, sort: 1, status: 1},
-    {id: 18, name: "Бренд №18 Секция №4", section: 4, sort: 1, status: 1},
-    {id: 19, name: "Бренд №19 Секция №5", section: 5, sort: 1, status: 1},
-    {id: 20, name: "Бренд №20 Секция №5", section: 5, sort: 1, status: 1},
-    {id: 21, name: "Бренд №21 Секция №5", section: 5, sort: 1, status: 1},
-    {id: 22, name: "Бренд №22 Секция №5", section: 5, sort: 1, status: 1},
-    {id: 23, name: "Бренд №23 Секция №5", section: 5, sort: 1, status: 1},
-    {id: 24, name: "Бренд №24 Секция №5", section: 5, sort: 1, status: 1},
-    {id: 25, name: "Бренд №25 Секция №5", section: 5, sort: 1, status: 1},
-    {id: 26, name: "Бренд №26 Секция №5", section: 5, sort: 1, status: 1},
-    {id: 27, name: "Бренд №27 Секция №5", section: 5, sort: 1, status: 1},
-    {id: 28, name: "Бренд №28 Секция №6", section: 6, sort: 1, status: 1},
-    {id: 29, name: "Бренд №29 Секция №6", section: 6, sort: 1, status: 1},
-    {id: 30, name: "Бренд №30 Секция №6", section: 6, sort: 1, status: 1}];
+databrends = [{id: 1, name: "Бебра необычная", section: 1, sort: 1, status: 1},
+    {id: 2, name: "Бебра ", section: 1, sort: 1, status: 1},
+    {id: 3, name: "Бебра ", section: 1, sort: 1, status: 1},
+    {id: 4, name: "Бебра ", section: 1, sort: 1, status: 1},
+    {id: 5, name: "Бебра ", section: 2, sort: 1, status: 1},
+    {id: 6, name: "Бебра ", section: 2, sort: 1, status: 1},
+    {id: 7, name: "Бебра ", section: 2, sort: 1, status: 1},
+    {id: 8, name: "Бебра ", section: 2, sort: 1, status: 1},
+    {id: 9, name: "Бебра ", section: 2, sort: 1, status: 1},
+    {id: 10, name: "Бебра ", section: 2, sort: 1, status: 1},
+    {id: 11, name: "Бебра ", section: 3, sort: 1, status: 1},
+    {id: 12, name: "Бебра ", section: 3, sort: 1, status: 1},
+    {id: 13, name: "Бебра ", section: 3, sort: 1, status: 1},
+    {id: 14, name: "Бебра ", section: 3, sort: 1, status: 1},
+    {id: 15, name: "Бебра ", section: 3, sort: 1, status: 1},
+    {id: 16, name: "Бебра ", section: 4, sort: 1, status: 1},
+    {id: 17, name: "Бебра ", section: 4, sort: 1, status: 1},
+    {id: 18, name: "Бебра ", section: 4, sort: 1, status: 1},
+    {id: 19, name: "Бебра ", section: 5, sort: 1, status: 1},
+    {id: 20, name: "Бебра ", section: 5, sort: 1, status: 1},
+    {id: 21, name: "Бебра ", section: 5, sort: 1, status: 1},
+    {id: 22, name: "Бебра ", section: 5, sort: 1, status: 1},
+    {id: 23, name: "Бебра ", section: 5, sort: 1, status: 1},
+    {id: 24, name: "Бебра ", section: 5, sort: 1, status: 1},
+    {id: 25, name: "Бебра ", section: 5, sort: 1, status: 1},
+    {id: 26, name: "Бебра ", section: 5, sort: 1, status: 1},
+    {id: 27, name: "Бебра ", section: 5, sort: 1, status: 1},
+    {id: 28, name: "Бебра ", section: 6, sort: 1, status: 1},
+    {id: 29, name: "Бебра ", section: 6, sort: 1, status: 1},
+    {id: 30, name: "Бебра ", section: 6, sort: 1, status: 1}];
 
 function Brends(id,name,section,sort,status)
 {

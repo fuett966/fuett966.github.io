@@ -42,8 +42,8 @@
                                                 '</div>'+
                                                 '<div class="col-sm-2">'+
                                                     '<div class="material-switch pull-right">'+
-                                                        '<input id="categorystatus1" name="someSwitchOption001" type="checkbox" '+status+'/>'+
-                                                        '<label for="categorystatus1" class="label-success"></label>'+
+                                                        '<input id="categorynewstatus'+Obj.id+'" name="someSwitchOption001" type="checkbox" '+status+'/>'+
+                                                        '<label for="categorynewstatus'+Obj.id+'" class="label-success"></label>'+
                                                     '</div>'+
                                                 '</div>'+
                                                 '<div class="col-sm-1">'+
@@ -108,16 +108,16 @@
                     <div class="col-md-12">
                         <ul class="nav nav-pills">
                             <li>
-                                <a href="#">Дополнительные справочники</a>
+                                <a href="colorandsizeadmin.html">Цвета</a>
                             </li>
                             <li>
                                 <a href="#">Секции категорий</a>
                             </li>
                             <li>
-                                <a href="#">Бренды</a>
+                                <a href="brendsadmin.html">Бренды</a>
                             </li>
                             <li class="active">
-                                <a href="#">Категории</a>
+                                <a href="index.html">Категории</a>
                             </li>
                             <li>
                                 <a href="#">Товары</a>
@@ -154,10 +154,15 @@
                                                 </div>
                                                 <div class="col-sm-2">
                                                     <div class="material-switch pull-right">
-                                                        <input name="someSwitchOption001" type="checkbox" id="categorynewstatus"/>
+                                                        <input id="categorynewstatus" name="someSwitchOption001" type="checkbox"/>
                                                         <label for="categorynewstatus" class="label-success"></label>
                                                     </div>
                                                 </div>
+                                                <!-- '<div class="col-sm-2">'+
+                                                    '<div class="material-switch pull-right">'+
+                                                        '<input id="categorystatus" name="someSwitchOption001" type="checkbox" '+status+'/>'+
+                                                        '<label for="categorystatus" class="label-success"></label>'+
+                                                    '</div>'+ -->
                                                 <div class="col-sm-1">
                                                     <a class="btn btn-block btn-success" id="addcategory">V</a>
                                                 </div>
